@@ -17,7 +17,7 @@ typedef enum{
 
 
 typedef struct{
-    char *LangArray[MaxsupportedLanguages];
+   const char *LangArray[MaxsupportedLanguages];
 }LangArray_t;
 
 extern const LangArray_t stringsArray[Max_error_messages];
