@@ -24,7 +24,7 @@ TEST_CASE("infers the breach according to limits") {
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, -1) == TOO_LOW);
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 20) == NORMAL);
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 0) == NORMAL);
-  REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 40) == NORMAL)
+  REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 40) == NORMAL);
     
   batteryChar.coolingType = PASSIVE_COOLING;
   REQUIRE(checkAndAlert(TO_CONTROLLER, batteryChar, 40) == TOO_HIGH);
