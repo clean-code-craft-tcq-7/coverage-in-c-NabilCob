@@ -1,6 +1,7 @@
 
 #ifndef ALERT_H_
 #define ALERT_H_
+#include "IO.h"
 
 //Enum declaration
 typedef enum {
