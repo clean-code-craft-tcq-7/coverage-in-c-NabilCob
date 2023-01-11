@@ -46,16 +46,6 @@ int checkandAlertBreachStatus(BatteryParmType batteryParmsValue){
 }
 
 
-int main(){
-
-    BatteryCharacter batteryChar;
-    batteryChar.coolingType = PASSIVE_COOLING;
-    checkAndAlert(TO_EMAIL, batteryChar, 10);
-    checkAndAlert(TO_EMAIL, batteryChar, 50);
-    return 0;
-}
-
-
 
 
 
