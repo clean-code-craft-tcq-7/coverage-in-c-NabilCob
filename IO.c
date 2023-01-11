@@ -20,7 +20,7 @@ void sendToController(PrintParmsType printParms) {
 
 void sendToEmail(PrintParmsType printParms) {
   const char* recepient = "a.b@c.com";
-  printf("To: %s\nsensor value - %d,%s,%s", recepient,
+  printf("To: %s\nsensor value - %lf,%s,%s", recepient,
                   printParms.value,
                   stringsArray[printParms.errorMsg].LangArray[Langaugedefined],
                   stringsArray[printParms.breachLvl].LangArray[Langaugedefined]);
