@@ -16,7 +16,7 @@ The [GitHub Actions](https://docs.github.com/en/actions) in this project impleme
 - No Duplications: Fails on finding duplication of 3 lines or more. There are no duplications, so this passes.
 - Limit complexity: The limit per function is set at 3 and it's currently failing
 - Build and Run: Runs the tests. It's passing currently, but there are hardly any tests. You need to add more.
-- Enter Reflections: Replace the `_enter` in the **Reflections** section below, within this file. This workflow fails till you replace it with your impressions.
+- Enter Reflections: Replace the `` in the **Reflections** section below, within this file. This workflow fails till you replace it with your impressions.
 
 As with any legacy, have a look at the code to understand it better.
 
@@ -46,7 +46,7 @@ You have seen a few workflows in this repository. They are quality-gates to prev
 
 During the next four weeks, what improvement do you plan in your code-quality practice? (in your regular work, not in this repository!)
 1.Separation of production code and Release code- Before separation was done using compiler switch. Chnaged to function pointers to do the separation.
-2.Trying to separate function as single responsible function
+2.Currently working to separate function as single responsible function
 
 
 
