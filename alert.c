@@ -6,9 +6,9 @@
 //Limits definition
 const BatteryParms BatteryParmsValue[MaxBatteryParmsTypesSupported] =
 {
-   {PassiveCooling, .limit.minValue = 0, .limit.maxValue = 35},
-   {HighActiveCooling, .limit.minValue = 0, .limit.maxValue = 45},
-   {MediumActiveCooling, .limit.minValue = 0, .limit.maxValue = 40},
+   {PassiveCooling, { 0, 35}},
+   {HighActiveCooling, {0, 45}},
+   {MediumActiveCooling, { 0, 40}},
 };
 
 const int Langaugedefined = English;
