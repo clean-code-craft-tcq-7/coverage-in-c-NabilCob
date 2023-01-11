@@ -1,7 +1,7 @@
 
-#include "alert.h"
 #include "IO.h"
 #include "LanguageString.h"
+#include "alert.h"
 
 //Limits definition
 const BatteryParms BatteryParmsValue[MaxBatteryParmsTypesSupported] =
