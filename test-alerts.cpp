@@ -16,12 +16,14 @@ TEST_CASE("Test breach level") {
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 50) == TOO_HIGH);
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, -5) == TOO_LOW);
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 25) == NORMAL);
+  REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 0) == NORMAL);
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 45) == NORMAL);
     
   batteryChar.coolingType = MED_ACTIVE_COOLING;
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 45) == TOO_HIGH);
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, -10) == TOO_LOW);
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 10) == NORMAL);
+  REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 0) == NORMAL);
   REQUIRE(checkAndAlert(TO_EMAIL, batteryChar, 40) == NORMAL);
    
   batteryChar.coolingType = PASSIVE_COOLING;
