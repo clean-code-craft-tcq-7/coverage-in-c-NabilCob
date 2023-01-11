@@ -13,8 +13,8 @@ typedef struct{
 } messageParmsType;
 
 typedef struct{
-  double target;
-  int value;
+  int target;
+  double value;
   int errorMsg;
   int breachLvl;
 } PrintParmsType;
