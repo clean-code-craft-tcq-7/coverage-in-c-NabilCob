@@ -31,12 +31,12 @@ int checkandAlertBreachStatus(BatteryParmType batteryParmsValue){
     PrintParms.target = batteryParmsValue.alertTarget;
     PrintParms.errorMsg = batteryParmsValue.errorMessage;
     if(batteryParmsValue.sensorValue < batteryParmsValue.limit.minValue){
-         PrintParms.breachLvl = Breachhigh;
+         PrintParms.breachLvl = Breachlow;
         (*batteryParmsValue.printIO)(PrintParms);
         return TOO_LOW;
     }
     else if(batteryParmsValue.sensorValue > batteryParmsValue.limit.maxValue){
-         PrintParms.breachLvl = Breachlow;
+         PrintParms.breachLvl = Breachhigh;
         (*batteryParmsValue.printIO)(PrintParms);
         return TOO_HIGH;
     }
