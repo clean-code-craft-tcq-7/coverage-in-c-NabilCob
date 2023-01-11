@@ -46,7 +46,7 @@ typedef struct{
 typedef struct{
     double sensorValue;
     BatteryParmsLimit limit;
-    void (*printIO)();
+    void (*printIO)(PrintParmsType);
     int alertTarget;
     int errorMessage;
 } BatteryParmType;
