@@ -24,7 +24,8 @@ typedef struct{
   void (*printIO)(PrintParmsType);
 } IOTarget;
 
-
+extern int AlertviaController;
+extern int AlertviaEmail;
 void sendToIO(PrintParmsType printParms);
 void sendToController(PrintParmsType printParms);
 void sendToEmail(PrintParmsType printParms);
